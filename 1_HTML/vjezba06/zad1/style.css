@@ -1,0 +1,28 @@
+body{
+    background-color: #eee;
+    font-family: sans-serif;
+}
+
+div{
+    background-color: white;
+    max-width: 300px;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+
+h1{
+    color: blue;
+    text-align: center;
+    padding-top: 20px;
+}
+
+h2{
+    font-size: 1rem;
+    text-align: center;
+    color: #716c6c;
+}
+
+p{
+    text-align: center;
+    
+}
