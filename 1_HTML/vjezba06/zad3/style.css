@@ -56,3 +56,40 @@ input[type="submit"]{
     max-width: 165px;
 }
 
+table{
+    width: 140vh;
+}
+
+table, td, th{
+    border: 1px solid rgb(192, 189, 189);
+    border-collapse: collapse;
+    padding: 10px 15px;
+}
+
+thead th{
+    background-color: rgb(11, 135, 197);
+    color: white;
+    text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(231, 230, 230);
+}
+
+tbody td:last-child{
+    color: red;
+    font-weight: 800;
+}
+
+tbody tr{
+    border-bottom: 1px solid #ddd;
+}
+td, th{
+    border: none;
+}
+
+
