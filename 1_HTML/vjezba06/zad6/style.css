@@ -1,0 +1,109 @@
+body{
+    background-color: lightgray;
+    font-family: sans-serif;
+}
+
+.container{
+    background-color: white;
+    box-shadow: 0 0 30px rgba(111, 111, 111, 0.6);
+    width: 100vh;
+    text-align: center;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+h1{
+    background-color: rgb(195, 71, 96);
+    color: white;
+    font-size: 14px;
+    width: 20vh;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+p{
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.recipe{
+    width: 104vh;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.card{
+    background: white;
+    border-radius: 15px;
+    padding: 28px 32px;
+    box-shadow: 0 0 30px rgba(111, 111, 111, 0.6);
+}
+
+h2{
+    margin-bottom: 18px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.card ul,
+.card ol{
+    padding-left: 20px;
+    line-height: 1.7;
+}
+
+.card li{
+    margin-bottom: 6px;
+    font-size: 11px;
+}
+
+.amount{
+    color: #e63946;
+    font-weight: 600;
+}
+
+.rating{
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(111, 111, 111, 0.6);
+    width: 100vh;
+    margin: 0 auto;
+}
+
+.rating p{
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.stars{
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+
+.stars input{
+    display: none;
+}
+
+.stars label{
+    font-size: 26px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.stars label:hover, 
+.stars label:hover~label{
+    color: #f5b400;
+}
+
+.stars input:checked~label{
+    color: #f5b400;
+}
+
+
