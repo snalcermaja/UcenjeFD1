@@ -1,0 +1,3 @@
+.neural-backgraund{
+    background: radial-gradient(circle at 15% 85%, rgba(75, 0, 130, 0.7) 0%, transparent 50%), radial-gradient(circle at 85% 15%, rgb(58 21 43 / 80%) 0%, transparent 50%), radial-gradient(circle at 45% 60%, rgb(48 15 48 / 60%) 0%, transparent 50%), radial-gradient(circle at 70% 40%, rgba(34, 139, 34, 0.4) 0%, transparent 50%), linear-gradient(135deg, #0a0a0a 0%, #2d1b3d 50%, #000000 100%);
+}
