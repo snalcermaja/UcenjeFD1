@@ -69,9 +69,28 @@ document.getElementById('izvedi').addEventListener('click', () => {
   }
 
 
-  if(zadatak==='4'){
-    
+  if(zadatak==='5'){
+    const x = Number(a);
+    const y = Number(b);
+    const z = Number(c);
+    const q = Number(d);
+    if(!x || !y || !z || !q){
+      rezultat.innerHTML='Jedno od unesenih polja nije broj';
+    }
+    if(x>y && z>q){
+      rezultat.innerHTML=x+z;
+    }
+    else if(x>y && z>q){
+      rezultat.innerHTML=x+q;
+    }
+    else if(x>y && z>q){
+      rezultat.innerHTML=y+z;
+    }
+    else if(x>y && z>q){
+      rezultat.innerHTML=y+q;
+    }
 
+    
 
 
     return;
@@ -109,6 +128,69 @@ document.getElementById('izvedi').addEventListener('click', () => {
     
     
     return; // short curcuiting
+  }
+
+
+
+
+  if(zadatak === '6'){
+    const x = Number(d);
+    if(!x || x===0){
+      rezultat.innerHTML='Vrijednost u polju D nije broj ili je 0';
+      return;
+    }
+
+    rezultat.innerHTML=x*10;
+
+
+
+    return;
+  }
+
+
+  if(zadatak === '7'){
+    if(!b){
+      rezultat.innerHTML='Obavezan unos grada pod vrijednost B';
+      return;
+    }
+
+    if(b.tolowerCase() === 'osijek'){
+      rezultat.innerHTML=`${b} je sjedište Edunove`
+    }
+    else{
+      rezultat.innerHTML=`${b} nije sjedište Edunove`
+    }
+
+
+    return;
+  }
+
+
+  if(zadatak === '8'){
+    rezultat.innerHTML=`${a} ${b}`
+
+
+    return;
+  }
+
+
+
+  if(zadatak === '9'){
+    const x = Number(a)
+    const y = Number(d)
+    if (!x || x===0){
+      rezultat.innerHTML='Greska'
+      return
+    }
+    if (!y || y===0){
+      rezultat.innerHTML='Greska'
+      return
+    }
+
+    rezultat.innerHTML=x*y
+
+
+    return;
   }
 
   // Ovdje će doći drugi zadatak
