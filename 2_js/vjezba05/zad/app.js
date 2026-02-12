@@ -75,9 +75,39 @@ document.getElementById('izvedi').addEventListener('click', () => {
       break;
 
 
+      case '8':
+
+      const doBroja = Number(a);
+
+      if(!a){
+        rezultat.innerHTML='Unesite broj';
+        return;
+      }
+
+      let s='';
+
+      for(let i=1; i<=doBroja; i++){
+        console.log(i + ',');
+        if(i===doBroja){
+        s += i;
+      }else{
+        s += i + ', ';
+      }
+
+    }
+      rezultat.innerHTML = s;
+
+      break;
+
+
+
     default:
       rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
   }
+
+
+
+
 
 });
 
