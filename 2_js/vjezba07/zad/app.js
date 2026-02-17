@@ -92,6 +92,31 @@ document.getElementById('izvedi').addEventListener('click', () => {
     case '4':
       // rješavanje 4. zadatak
 
+      let s = '';
+      //debugger;
+      for(let i=0; i<a.length; i++){
+        if(a[i] != ' '){
+          s += a[i].toLowerCase();
+        }
+      }
+      console.log('s=', s);
+
+      let p = true;
+      let duljina = s.length
+      for(let i=0; i<duljina/2; i++){
+        if(s[i] !== s[duljina - 1 - i]){
+          p = false;
+          break;
+        }
+      }
+
+      if(p){
+        rezultat.innerHTML='Izraz je palindrom'
+      }else{
+        rezultat.innerHTML='Nije palindrom'
+      }
+
+
       // kraj rješavanje 4. zadatak
     break;
     case '5':
