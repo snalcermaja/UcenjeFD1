@@ -18,9 +18,9 @@ export default function SmjerPromjena(){
             
             s.datumPokretanja = s.datumPokretanja.substring(0,10)
 
-            setSmjer(s)
-
             setAktivan(s.aktivan)
+
+            setSmjer(s)
         })
     }
 
@@ -30,7 +30,7 @@ export default function SmjerPromjena(){
 
     async function promjeni(smjer) {
         //console.table(smjer)
-        await SmjerService.promjeni(smjer).then(()=>{
+        await SmjerService.promjeni(params.sifra,smjer).then(()=>{
           navigate(RouteNames.SMJEROVI)  
         })
     }
@@ -57,7 +57,7 @@ export default function SmjerPromjena(){
             <Form.Group controlId="naziv">
                 <Form.Label>Naziv</Form.Label>
                 <Form.Control type="text" name="naziv" required 
-                defoultValue={smjer.naziv} />
+                defaultValue={smjer.naziv} />
             </Form.Group>
 
             <Form.Group controlId="trajanje">
@@ -80,7 +80,7 @@ export default function SmjerPromjena(){
 
             <Form.Group controlId="aktivan">
                 <Form.Check label="Aktivan" name="aktivan"
-                value={aktivan}
+                checked={aktivan}
                 onChange={(e)=>{setAktivan(e.target.checked)}} />
             </Form.Group>
 
@@ -94,7 +94,7 @@ export default function SmjerPromjena(){
                 </Col>
                 <Col>
                     <Button type="submit" variant="success">
-                        Dodaj novi smjer
+                        Promjeni smjer
                     </Button>
                 </Col>
             </Row>
